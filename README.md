@@ -46,5 +46,5 @@ The code is divided in three Python files:
     - The class *MobileNet* loads a pre-trained MobileNetV2 and freezes its feature extractor.  
     - It defines a new classifier head for binary classification ("Smiling" or not)  
     - Implementation of Flower-based federated learning simulation.  
-- *mobilenet_celeba.py* has the code for tackling the task in a non-federated strategy is shown for debugging purposes and results comparisons.  
+- *mobilenet_celeba.py* has the code for tackling the task in a non-federated strategy, for debugging purposes and results comparisons.  
 
