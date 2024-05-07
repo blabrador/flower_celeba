@@ -91,14 +91,18 @@ def load_datasets(num_clients, iid=True, train_test_ratio=0.999, attribute="Smil
     train_selected_images = []
     for user, image_list in user_dict_rev.items():
         train_image_list = []
+        skip_user = False
         for image in image_list:
             if image not in test_image_names:
                 train_image_list.append(image)
-        if len(train_image_list) >= min_user_images:
-            train_selected_images.extend(train_image_list)
-            train_selected_users.append(user)
-        if len(train_selected_users) == num_clients:
-            break
+            else:
+                skip_user = True
+        if not skip_user:
+            if len(train_image_list) >= min_user_images:
+                train_selected_images.extend(train_image_list)
+                train_selected_users.append(user)
+            if len(train_selected_users) == num_clients:
+                break
 
     # Create IID vs. non-IID splits
     if iid:
