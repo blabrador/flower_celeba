@@ -23,7 +23,9 @@ Build a Federated Learning setting using Flower (https://flower.ai) and PyTorch 
 
 For this *unfinished* code challenge:
     - I have developped a data splitter and dataloaders using 2 data distributions,
+    
     - I have used a pre-trained version of MobileNetV2, frozen its feature extractor, and trained the classifier head from scratch, 
+    
     - I executed the federated learning training with 50 clients for at least 10 FL rounds.
     
   Missing areas:  - Report training and testing performance.
