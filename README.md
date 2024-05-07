@@ -43,7 +43,7 @@ The code is divided in three Python files:
     - For analysis comparison and debug purposes, I have also implemented a Pytorch DataLoader that samples data from the whole dataset.  
 
 - In *flwr_mobilenet_celeba.py* the rest of the code for this challenge is wrriten.  
-    - The class *MobileNet* loads a pre-trained MobileNetV2 and freezes it's feature extractor.  
+    - The class *MobileNet* loads a pre-trained MobileNetV2 and freezes its feature extractor.  
     - It defines a new classifier head for binary classification ("Smiling" or not)  
     - Implementation of Flower-based federated learning simulation.  
 - *mobilenet_celeba.py* has the code for tackling the task in a non-federated strategy is shown for debugging purposes and results comparisons.  
