@@ -14,7 +14,7 @@ Build a Federated Learning setting using Flower (https://flower.ai) and PyTorch 
 - Compare performance across demographic groups present in the CelebFaces dataset
 
 
-- ** Prerequisites**:
+- **Prerequisites**:
       - Install libraries/dependencies (PyTorch, Flower FL framework, etc.)
       - Download the CelebA dataset if required.
 
